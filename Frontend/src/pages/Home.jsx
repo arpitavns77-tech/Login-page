@@ -22,7 +22,7 @@ const Home = () => {
 
   const fetchProducts = async ()=>{
     try{
-      const url = `login-page-delta-liart.vercel.app/products`;
+      const url = `https://login-page-delta-liart.vercel.app/products`;
       const headers = {
         headers: {
           'Authorization': localStorage.getItem('token')
