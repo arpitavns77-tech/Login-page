@@ -26,7 +26,7 @@ const Login = () => {
       return handleError('name,email are required')
     }
     try{
-      const url = `login-page-delta-liart.vercel.app/auth/login`;
+     const url = `https://login-page-delta-liart.vercel.app/auth/login`;
       const response = await fetch(url, {
         method: "POST",
         headers: {
