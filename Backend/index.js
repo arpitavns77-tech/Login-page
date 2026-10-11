@@ -3,7 +3,7 @@ const { dbconnection } = require("./Models/db");
 const app = express();
 const cors = require('cors');
 require('dotenv').config();
-require('./Models/db')
+// require('./Models/db')
 const AuthRouter = require("./Routes/AuthRouter.js")
 const ProductRouter = require("./Routes/ProductRouter.js")
 
@@ -40,7 +40,7 @@ let myDB = await dbconnection();
     res.send(resobj)
 })
 
-dbconnection();
+// dbconnection();
 
 app.listen(PORT,() =>{
     console.log(`server running on ${PORT}`)
